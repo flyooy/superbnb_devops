@@ -1,0 +1,7 @@
+
+services:
+  superbnbbackend:
+    build:
+      context: ../backend
+      platforms: 
+        - "linux/amd64"

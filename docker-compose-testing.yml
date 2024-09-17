@@ -1,0 +1,10 @@
+
+services:
+  superbnbbackend:
+    depends_on:
+      - superbnbdb
+    build: ../backend
+    ports:
+      - 8181:8080
+    env_file:
+      - ./.env.testing
